@@ -27,4 +27,5 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
-          personal_token: ${{ secrets.GH_PAT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # ✅ Must be passed in env
