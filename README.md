@@ -1,4 +1,4 @@
-<h1 align="center">Crafting full-stack magic with Mongo, Express, React & Node.</h1>
+<h1 align="center"> Hii i'm Mihir Crafting full-stack magic with Mongo, Express, React & Node.</h1>
 
 ###
 
