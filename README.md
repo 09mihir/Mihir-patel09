@@ -57,8 +57,13 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mihir-patel09&radius=16&theme=dracula&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
-###
+<div align="center">
+  <img src="https://profile-counter.glitch.me/Mihir-patel09/count.svg?"  />
+</div>
+
+<br/>
+<br/>
+
+---
 
 <img src="https://raw.githubusercontent.com/Mihir-patel09/Mihir-patel09/output/snake.svg" alt="Snake animation" />
-
-###
