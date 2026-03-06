@@ -57,7 +57,7 @@
 </div>
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/Mihir-patel09/count.svg?"  />
+  <img src="https://profile-counter.glitch.me/09mihir/count.svg?"  />
 </div>
 
 <br/>
