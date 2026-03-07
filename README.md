@@ -75,7 +75,7 @@
 </div> -->
 
 <div align="center">
-  <img src="" alt="Programming Meme" width="500" />
+  <!-- MEME --><img src="" alt="Programming Meme" width="500" /><!-- /MEME -->
 </div>
 
 <br/>
