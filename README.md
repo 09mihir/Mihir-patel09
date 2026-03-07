@@ -71,7 +71,9 @@
 <br/>
 
 <div align="center">
-<img src="assets/gitmeme.png" width="500"/>
+  <a href="https://git-meme.vercel.app/" target="_blank">
+      <img src="assets/gitmeme.png" width="500"/>
+  </a>
 </div>
 
 <br/>
