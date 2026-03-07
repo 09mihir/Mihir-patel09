@@ -77,7 +77,7 @@
 ## 😂 Daily Developer Meme (Updates Every 24 Hours)
 
 <!-- MEME -->
-<img src="https://i.redd.it/tgqz762py8ng1.gif" alt="Programming Meme" width="700" />
+<img src="https://i.redd.it/tgqz762py8ng1.gif" alt="Programming Meme" width="600" />
 <!-- /MEME -->
 
 <br><br>
