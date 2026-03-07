@@ -75,7 +75,7 @@
 </div> -->
 
 <div align="center">
-  <!-- MEME --><img src="https://i.redd.it/ncfja6jf6vmg1.png" alt="Programming Meme" width="500" /><!-- /MEME -->
+  <!-- MEME --><img src="https://i.redd.it/grqdb02am8ng1.png" alt="Programming Meme" width="500" /><!-- /MEME -->
 </div>
 
 <br/>
