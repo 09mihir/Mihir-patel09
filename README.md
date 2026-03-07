@@ -70,6 +70,12 @@
 <br/>
 <br/>
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/09mihir/gitMeme/main/assets/gitmeme.png" width="900"/>
+</div>
+
+<br/>
+<br/>
 
 
 <div align="center">
