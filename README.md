@@ -64,9 +64,8 @@
 <br/>
 
 <!-- Markdown -->
-<div align="center">
-![Jokes Card](https://readme-jokes.vercel.app/api)
-</div>
+<!-- HTML -->
+<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
 
 ---
 
