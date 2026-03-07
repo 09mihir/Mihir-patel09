@@ -27,7 +27,7 @@ jobs:
           awk -v meme="${{ steps.meme.outputs.url }}" '
           /<!-- MEME -->/ {
             print "<!-- MEME -->"
-            print "<img src=\"" meme "\" alt=\"Programming Meme\" width=\"700\" />"
+            print "<img src=\"" meme "\" alt=\"Programming Meme\" width=\"600\" />"
             print "<!-- /MEME -->"
             skip=1
             next
