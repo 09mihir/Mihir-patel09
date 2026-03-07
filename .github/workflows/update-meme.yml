@@ -2,7 +2,7 @@ name: Update Meme
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,16 +11,37 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Fetch meme and update README
+      - name: Fetch meme
+        id: meme
         run: |
-          MEME_URL=$(curl -s https://git-meme.vercel.app/api/memes/random | python3 -c "import sys,json; print(json.load(sys.stdin)['imageUrl'])")
-          sed -i "s|<!-- MEME -->.*<!-- /MEME -->|<!-- MEME --><img src=\"$MEME_URL\" alt=\"Programming Meme\" width=\"500\" /><!-- /MEME -->|" README.md
+          MEME_URL=$(curl -s https://git-meme.vercel.app/api/memes/random | jq -r '.imageUrl')
+          echo "url=$MEME_URL" >> $GITHUB_OUTPUT
 
-      - name: Commit
+      - name: Update README
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet README.md || (git add README.md && git commit -m "🤖 fresh meme [skip ci]" && git push)
+          awk -v meme="${{ steps.meme.outputs.url }}" '
+          /<!-- MEME -->/ {
+            print "<!-- MEME -->"
+            print "<img src=\"" meme "\" alt=\"Programming Meme\" width=\"500\" />"
+            print "<!-- /MEME -->"
+            skip=1
+            next
+          }
+          /<!-- \/MEME -->/ { skip=0; next }
+          !skip { print }
+          ' README.md > temp.md
+
+          mv temp.md README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git diff --cached --quiet || git commit -m "😂 Updated daily meme"
+          git push
